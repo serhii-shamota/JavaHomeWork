@@ -8,8 +8,8 @@ public class Interval {
         int x;
         System.out.println("Будь ласка введіть число в діапазоні від 1 до 100");
         x = scan.nextInt();
-        if (x == 0 || x < 100) {
-            if (x<=14) {
+        if (x == 0 ) {
+            if (x>0 | x<=14) {
                 System.out.println("діапазон від 0 до 14");
             }else if (x>=15 | x<=35) {
                 System.out.println("діапазон від 15 до 35");
