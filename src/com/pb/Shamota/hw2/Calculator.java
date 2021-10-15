@@ -27,29 +27,25 @@ public class Calculator {
 
         switch(sign){
             case "+":
-                System.out.println(+(operand1 + operand2));
+                System.out.println( + (operand1 + operand2));
                 break;
 
-            switch(sign){
-                case "-":
-                    System.out.println(+(operand1 - operand2));
+            case "-":
+                System.out.println( + (operand1 - operand2));
+                break;
+
+            case "*":
+                System.out.println( + (operand1 * operand2));
                     break;
 
-                switch(sign){
-                    case "*":
-                        System.out.println(+(operand1 * operand2));
-                        break;
-
-                    switch(sign){
-                        case "/":
-                            System.out.println(+(operand1 / operand2));
-                            break;
-                        {
-                            if (operand2 == 0) ;
+            case "/":
+                System.out.println( + (operand1 / operand2));
+                {
+                     if (operand2 == 0)
                             System.out.println("Помилка");
-                        }
-                        break;
+                }
+                     break;
 
                         default: {
                         System.out.println("Заборонена дія");
-                        }}}}}}}
+                        }}}}
