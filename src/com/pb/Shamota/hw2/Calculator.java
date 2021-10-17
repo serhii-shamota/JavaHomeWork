@@ -10,7 +10,7 @@ public class Calculator {
         // char num = 'A';
         int operand1;
         int operand2;
-        String symbol;
+
         System.out.println("Введіть перше число: ");
         operand1 = scan.nextInt();
         System.out.println("Введіть друге число: ");
@@ -18,6 +18,7 @@ public class Calculator {
     //  {
     //
     //  }
+
     //  symbol = scan.next();
     //  {
 
@@ -36,15 +37,13 @@ public class Calculator {
 
             case "*":
                 System.out.println( + (operand1 * operand2));
-                    break;
+                break;
 
             case "/":
+                if (operand2 == 0)
+                    System.out.println("Помилка"); else
                 System.out.println( + (operand1 / operand2));
-                {
-                     if (operand2 == 0)
-                            System.out.println("Помилка");
-                }
-                     break;
+                break;
 
                         default: {
                         System.out.println("Заборонена дія");
